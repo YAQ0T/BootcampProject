@@ -1,0 +1,71 @@
+body {
+  background-color: #ecf0f1;
+}
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 6fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "h"
+    "s"
+    "p";
+  width: 800px;
+  height: 800px;
+  border-radius: 7px;
+}
+.child {
+  border: 2px solid #dadada;
+  border-radius: 7px;
+  padding-left: 10px;
+  border-style: outset;
+}
+.head {
+  display: grid;
+  margin: 4px;
+  grid-area: h;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.send {
+  height: 50%;
+
+  display: grid;
+  grid-area: s;
+  margin: 4px;
+  grid-template-columns: 5fr 1fr;
+  border-radius: 7px;
+}
+#text {
+  display: grid;
+  margin-right: 15px;
+  border-radius: 7px;
+  margin: 4px;
+}
+#button {
+  display: grid;
+  background-color: #3498db;
+  border-radius: 7px;
+  margin: 4px;
+}
+.posts {
+  grid-template-columns: 1fr;
+  grid-area: p;
+  border-radius: 7px;
+  margin: 4px;
+}
+.posts > div {
+  background-color: #ecf0f1;
+  grid-template-rows: 1fr 3fr 1fr 1fr;
+  display: grid;
+
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+#delete {
+  display: grid;
+  height: 50%;
+  width: 15%;
+  background-color: #e74c3c;
+  margin-top: 10px;
+  border-radius: 7px;
+}
