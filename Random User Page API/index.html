@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>API Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ///////////////////////////////// -->
+    <script id="user-container" type="text/x-handlebars-template">
+      <img id="profile-pic" src="{{img}}" />
+
+      <div class="user-info">
+        <h2>{{FirstName}} {{LastName}}</h2>
+        <h2>{{city}} {{state}}</h2>
+      </div>
+    </script>
+    <!-- ///////////////////////////////// -->
+
+    <script id="quote-container" type="text/x-handlebars-template">
+      <p>Favoret quote: <p>
+
+
+        <h3 id="quote">{{qoute}}</h3>
+    </script>
+    <!-- ///////////////////////////////// -->
+
+    <script id="pokemon-container" type="text/x-handlebars-template">
+      <img id="pokemon-image" src="{{img}}" />
+
+      <h3 id="pokemon-text">Favorite Pokemon: {{PokemonName}}</h3>
+    </script>
+    <!-- ///////////////////////////////// -->
+
+    <script id="meat-container" type="text/x-handlebars-template">
+      <h3>About me:</h3>
+
+      <p class="meat-text">{{meat}}</p>
+    </script>
+    <!-- ///////////////////////////////// -->
+    <script id="friends-container" type="text/x-handlebars-template">
+      <ul>
+        <li>{{frind1}}</li>
+        <br />
+        <li>{{frind2}}</li>
+        <br />
+
+        <li>{{frind3}}</li>
+        <br />
+
+        <li>{{frind4}}</li>
+        <br />
+
+        <li>{{frind5}}</li>
+        <br />
+
+        <li>{{frind6}}</li>
+      </ul>
+    </script>
+    <!-- ///////////////////////////////// -->
+
+    <div class="container">
+      <div class="user-container"></div>
+      <div class="quote-container"></div>
+      <div class="content-container">
+        <div class="pokemon-container"></div>
+        <div class="meat-container"></div>
+      </div>
+      <div class="friends">
+        <h4>Friends:</h4>
+        <div class="friends-container"></div>
+      </div>
+      <div class="buttons">
+        <button id="loadData">Load User Data</button>
+        <button id="DisplayData">Display User</button>
+      </div>
+    </div>
+  </body>
+  <script src="handlebars-v4.7.7.js"></script>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="APIManager.js"></script>
+  <script src="Renderer.js"></script>
+
+  <script src="main.js"></script>
+</html>
