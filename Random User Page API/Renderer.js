@@ -37,12 +37,30 @@ class Renderer {
   };
   renderFrinds = () => {
     let tempObj = {
-      frind1: RandomDataApi.data.personFrinds[0].firstName,
-      frind2: RandomDataApi.data.personFrinds[1].firstName,
-      frind3: RandomDataApi.data.personFrinds[2].firstName,
-      frind4: RandomDataApi.data.personFrinds[3].firstName,
-      frind5: RandomDataApi.data.personFrinds[4].firstName,
-      frind6: RandomDataApi.data.personFrinds[5].firstName,
+      frind1:
+        RandomDataApi.data.personFrinds[0].firstName +
+        " " +
+        RandomDataApi.data.personFrinds[0].lastName,
+      frind2:
+        RandomDataApi.data.personFrinds[1].firstName +
+        " " +
+        RandomDataApi.data.personFrinds[1].lastName,
+      frind3:
+        RandomDataApi.data.personFrinds[2].firstName +
+        " " +
+        RandomDataApi.data.personFrinds[2].lastName,
+      frind4:
+        RandomDataApi.data.personFrinds[3].firstName +
+        " " +
+        RandomDataApi.data.personFrinds[3].lastName,
+      frind5:
+        RandomDataApi.data.personFrinds[4].firstName +
+        " " +
+        RandomDataApi.data.personFrinds[4].lastName,
+      frind6:
+        RandomDataApi.data.personFrinds[5].firstName +
+        " " +
+        RandomDataApi.data.personFrinds[5].lastName,
     };
     templateUsage("friends-container", tempObj);
   };
